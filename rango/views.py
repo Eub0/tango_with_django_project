@@ -3,10 +3,9 @@ from django.http import HttpResponse
 from rango.models import Page
 # Import the Category model
 from rango.models import Category
-from rango.forms import CategoryForm
+from rango.forms import CategoryForm, PageForm
 from django.shortcuts import redirect
 from django.urls import reverse
-from rango.forms import PageForm
 
 def index(request):
     # Query the database for a list of ALL categories currently stored.
